@@ -1,0 +1,27 @@
+<html>
+ <head>
+ </head>
+ <body>
+
+ <script>
+<!--   alert("here")-->
+   var xhr = new XMLHttpRequest();
+   xhr.onreadystatechange = function() {
+     if (xhr.readyState == XMLHttpRequest.DONE) {
+        alert(xhr.responseText);
+        }
+   }
+<!--   xhr.open('GET', 'file:///data/data/com.example.myapplication/hello.html', true);-->
+  alert('file:///data/data/com.example.myapplication/secret')
+    xhr.open('GET', 'file:///data/data/com.example.myapplication/secret', true);
+   xhr.send(null);
+    let d = new Date();
+<!--    alert("Today's date is " + d);-->
+<!--    console.log("Hello world " + d);-->
+ </script>
+
+    <b>Hello World</b>
+    <p>Hello World</p>
+     Hello World     
+ </body>
+</html>
